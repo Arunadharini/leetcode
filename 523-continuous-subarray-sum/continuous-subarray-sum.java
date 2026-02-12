@@ -6,7 +6,6 @@ class Solution {
         for(int i=0;i<nums.length;i++){
             pre +=nums[i];
             int mod=pre%k;
-            if(i>0 && mod==0) return true;
             if(mod_index.containsKey(mod)){
                 if(i-mod_index.get(mod)>=2) return true;
             }
